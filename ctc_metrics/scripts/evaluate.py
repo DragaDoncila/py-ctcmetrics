@@ -173,7 +173,7 @@ def calculate_metrics(
 
     # Prepare intermediate results
     graph_operations = {}
-    if "DET" in metrics or "TRA" in metrics:
+    if "DET" in metrics or "TRA" in metrics or "LNK" in metrics:
         graph_operations = \
             count_acyclic_graph_correction_operations(
                 ref_tracks, comp_tracks,
